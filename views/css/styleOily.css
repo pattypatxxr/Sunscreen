@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Noto+Sans+Thai:wght@200&family=Open+Sans:wght@300&family=Sarabun:wght@100;200&display=swap');
+
+h1 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    color: #662C1D;
+    text-align: center;
+}
+.border1 {
+    width: 700px;
+    padding: 0px;
+    border: 2px solid #ccc4be;
+    margin: 20px;
+    background-color: #FFFFFF;
+    transform: translate(38%, 0%);
+    border-radius: 8px;
+}
+.img {
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card {
+    background-color: #E8E1E0;
+    border: 2px solid #d6d0cf;
+    margin: 9.92px;
+    float: left;
+}
+h4 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    padding: 4px;
+    margin-bottom: 4px;
+
+}
+p {
+    font-family: 'Noto Sans Thai', sans-serif;
+    padding: 4px;
+    margin-bottom: 28px;
+}
+.Buyhere {
+    font-family: 'Noto Sans Thai', sans-serif;
+    text-align: center;
+    border: 2px solid #662C1D;
+    color: #ffffff;
+    background-color: #662C1D;
+    display: inline-block;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+
+}

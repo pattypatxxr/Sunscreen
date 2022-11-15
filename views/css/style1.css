@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Noto+Sans+Thai:wght@200&family=Open+Sans:wght@300&family=Sarabun:wght@100;200&display=swap');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(239, 219, 195);
+}
+li {
+    float: left;
+    
+}
+li a {
+    display: inside;
+    font-size:20px;
+    text-align: left;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-family: 'Cascadia Mono';
+}
+.active{
+    background-color: gray;
+    color: white;
+}
+.homepagemenu {
+    color: #967E76;
+    background-color: transparent;
+    font-size: 24px;
+    display: inline-block;
+    box-sizing: border-box;
+    
+}
+.banner {
+    width: 100%; 
+}
+.imgbutton {
+    width: 25%;
+    background-color: #F6F3EE;
+    float: left;
+}
+.stbutton {
+    width: 30%; 
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+h3 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: #E6E3DE;
+    color: #483936;
+}
