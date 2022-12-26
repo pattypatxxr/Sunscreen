@@ -111,7 +111,8 @@ h3 {
     top: 4.2px;
 }
 .sunscreen {
-    margin: 50px 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 li .dropdown {
     display: inline-block;
