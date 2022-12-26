@@ -93,7 +93,7 @@ app.get("/skintype2_1", (req,res) =>{
 
 
 app.get("/", (req,res) =>{
-    res.render("test")
+    res.render("Homepage")
 });
 
 
