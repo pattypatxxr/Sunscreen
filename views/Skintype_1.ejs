@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunscreen for all skin types</title>
+    <link rel="stylesheet" href="css/styleQ.css">
+</head>
+<body bgcolor="#B0978C">    
+
+    <a href="./Skintype" >
+        <img class="button" src="./image/backbutton.png">
+      </a>
+    <div class="border1">
+        <h1>ตอบคำถามดังต่อไปนี้เพื่อดูสภาพผิวของคุณ</h1>
+    </div>    
+    <div class="border2">
+        <h1 class="title">Question  ( เลือกข้อที่ถูกได้เพียงข้อเดียว )</h1>
+        <div class="border3">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                        <h3>
+                            <%= Datas[0].question %>
+                        </h3>
+                        <div>
+                            <p id="answer" class="answer" style="display: none;">
+                                <%= Datas[0].answer %>
+                                <%= Datas[0].answer_eng %>
+                            </p>
+                        </div>
+                        
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                        <h3>
+                            <%= Datas[1].question %>
+                        </h3>
+                        <p id="answer" class="answer" style="display: none;">
+                            <%= Datas[1].answer %>
+                            <%= Datas[1].answer_eng %>
+                        </p>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                        <h3>
+                            <%= Datas[2].question %>
+                            
+                        </h3>
+                        <p id="answer" class="answer" style="display: none;">
+                            <%= Datas[2].answer %>
+                            <%= Datas[2].answer_eng %>
+                        </p>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                        <h3>
+                            <%= Datas[3].question %>
+                        </h3>
+                        <p id="answer" class="answer" style="display: none;">
+                            <%= Datas[3].answer %>
+                            <%= Datas[3].answer_eng %>
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                        <h3>
+                            <%= Datas[4].question %>
+                       </h3>
+                       <p id="answer" class="answer2" style="display: none;">
+                            <%= Datas[4].answer %>
+                            <%= Datas[4].answer_eng %>
+                        </p>
+                </div>
+                
+                <img class="LeftButton" onclick="plusSlides(-1)" src="./image/LeftButton.png" id="leftbtn">
+                <img class="RightButton" onclick="plusSlides(1)" src="./image/RightButton.png" id="rightbtn">
+            </div>                                         
+                                              
+        <div>
+           
+            <button class="yes" id="submit">
+                YES
+            </button>
+            
+            
+            
+        </div>  
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        const s = 0;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+        }
+
+        const leftbtn = document.getElementById("leftbtn")
+        const rightbtn = document.getElementById("rightbtn")
+        var n = 0
+        leftbtn.addEventListener("click", function(){
+            n = n-1
+            if(n<0){
+                n = 4
+            }
+        })
+        rightbtn.addEventListener("click", function(){
+            n = n+1           
+            if(n>4){
+                n = 0
+            }
+        })
+        const btn = document.getElementById("submit")
+        const answer = document.querySelectorAll("[id='answer']")
+        btn.addEventListener("click", function(){
+        console.log(n)    
+            if(answer[n].style.display =="none"){
+                answer[n].style.display = "block"
+            }
+            
+                
+        })
+
+        </script>
+    
+    
+</body>
+</html>

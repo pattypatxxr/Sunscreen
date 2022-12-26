@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acne Prons Skin</title>
+    <link rel="stylesheet" href="css/styleAcne.css">
+</head>
+<body bgcolor="#B0978C">
+  <div>   
+    <ul class="allnav">
+      <div class="nav">
+        <li>
+          <a class="homepagemenu" href="./Homepage" id="Home">
+            Home
+          </a>       
+        </li>        
+      </div>
+      <li class="skintype">
+          <a href="./Skintype" target="_blank">
+          <img class="skintype" src="./image/skintypebutton1.png">
+          </a>
+      </li>
+    </ul>
+  </div>
+
+  <img class="banner" src="./image/forwebpage01.jpg" >
+  <div class="scarchbar">
+    <form role="search" id="form" class="search" autocomplete="off" >
+      <input type="search" id="query" name="Name" aria-label="   ค้นหาสินค้า" maxlength="300" placeholder="   ค้นหาสินค้า" autocomplete="off" aria-autocomplete="list" aria-controls="shopee-searchbar-listbox" aria-expanded="true" role="combobox" value="">
+      <button type="submit"> ค้นหา </button>
+    </form>
+
+    </div>
+
+    <div class="border1">
+      <h1>ผิวเป็นสิวง่าย</h1>
+    </div>
+    <div style="border-bottom: 14px dotted #fcfcfc;width: 1200px;margin-left: auto;margin-right: auto;  "> </div>
+  </div>
+
+  </div>
+  <div style="padding-bottom:6px ;"> </div>
+
+  <% for(var i=0; i<Datas.length; i++) {%>
+    <div> 
+      <div class="card">
+        <img src= <%= Datas[i].img %> class="img">
+        <div class="card-body">
+          <div>
+            <h4>
+              <strong>
+                <%= Datas[i].name %>
+              </strong>
+            </h4>
+            <p class="card-text">
+              <%= Datas[i].description %>
+            </p> 
+            <div class="allskt" >
+              <% for(var element of Datas[i].skintype) {%>          
+                <h3 class="card-text2">
+                  <%= element %>
+                </h3>
+              <% } %>
+            </div>                      
+          </div>        
+            <a href= <%= Datas[i].link %> class="Buyhere">
+              <span>
+                Buy here
+              </span>
+            </a>                     
+        </div>
+      </div>
+    </div>
+  <% } %>
+
+  <script>
+    let mybutton = document.getElementById("Home");
+    window.onscroll = function() {scrollFunction()};
+  
+    function scrollFunction() {
+      if (document.body.scrollTop > 310 || document.documentElement.scrollTop > 310) {
+        mybutton.style.display = "none";
+      }else {
+      mybutton.style.display = "block";
+    }
+    }
+    const f = document.getElementById('form');
+    const Name = document.getElementById('query');
+    const google = 'http://localhost:3000/AcneProne_Skins?q=';
+    function submitted(event) {
+      event.preventDefault();
+      const url = google + Name.value;
+      const win = window.location.replace(url);
+      win.focus();
+    }
+    f.addEventListener('submit', submitted);
+  </script>    
+</body>
+</html>

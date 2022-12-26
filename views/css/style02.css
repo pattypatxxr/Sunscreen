@@ -1,29 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Noto+Sans+Thai:wght@200&family=Open+Sans:wght@300&family=Sarabun:wght@100;200&display=swap');
 
+body{
+    background-image: url(./img-bg/bg7.jpg);
+}
 h1 {
     font-family: 'Noto Sans Thai', sans-serif;
     color: #754D3C;
     text-align: center;
+    display: inline;
 }
 .border1 {
     width: 700px;
-    padding: 0px;
-    border: 2px solid #DDC1A7;
-    margin: 20px;
-    background-color: aliceblue;
-    transform: translate(38%, 0%);
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 8px;
+    box-shadow: 0 4px 6px 0 rgba(108, 95, 91, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.295);
+    background: linear-gradient(180deg, rgba(246,246,246,1) 90%, rgb(212, 207, 203) 100%);   
 }
+
 h2 {
     font-family: 'Noto Sans Thai', sans-serif;
     color: #5A2C1E;
     text-align: center;
-    background-color: #edddce;
+    background-color: #edddcee1;
     padding: 2px;
     width: 250px;
     height: 70px;
     display: inline-block;
-    border: 5px solid #DDC1A7;
+    border: 5px solid #cbb8b0;
+    box-shadow: 0 2px 2px 0 rgba(108, 95, 91, 0.2), 0 3px 2px 0 rgba(87, 68, 58, 0.295);
+}
+h2:hover {
+    transform: scale(0.98); 
+    transition: all 0.4s;
 }
 h3 {
     font-family: 'Noto Sans Thai', sans-serif;
@@ -36,34 +53,43 @@ h3 {
     border-radius: 10px;
     display: inline-block;
     margin: 7px;
+    box-shadow: 0 2px 3px 0 rgba(108, 95, 91, 0.2), 0 3px 5px 0 rgba(128, 103, 74, 0.295);
+
 }
 .border2 {
-    width: 320px;
+    width: 340px;
+    height: 246px;
     padding: 0px;
-    border: 6px solid #c9a99e;
+    border: 0px solid #c9a99e;
+    border-radius: 6px;
     margin: 50px;
-    background-color: #CCB2A6;
+    background: #c3b0ab;   
     text-align: center;
     position: absolute;
     left:10%;
-    
+    box-shadow: 0 4px 6px 0 rgba(108, 95, 91, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.295);
+}
+div.border2:hover {
+    color: #e0d1cd;
 }
 .border3 {
-    width: 320px;
+    width: 340px;
+    height: 246px;
     padding: 0px;
-    border: 6px solid #c9a99e;
+    border: 0px solid #c9a99e;
+    border-radius: 6px;
     margin: 50px;
-    background-color: #CCB2A6;
+    background:  #c3b0ab;   
     position: absolute;
     text-align: center;
     right: 10%;
-
+    box-shadow: 0 4px 6px 0 rgba(108, 95, 91, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.295);
 }
 h4 {
     font-family: 'Noto Sans Thai', sans-serif;
     color: #5A2C1E;
     text-align: center;
-    background-color: #FDE5E1;
+    background-color: #f3e9e367;
     padding: 8px;
     width: 280px;
     height: 25px;
@@ -71,12 +97,22 @@ h4 {
     position: absolute;
     bottom: 20px;
     left: 38%;
-    border: 4px solid #eececc;
+    border: 4px solid #d7b9a8f3;
+    box-shadow: 0 4px 6px 0 rgba(108, 95, 91, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.295);
+
+}
+h4:hover {
+    transform: scale(1.04); 
+    transition: all 1s;
 }
 .button {
     width: 20%;
 }
 .video {
     text-align: center;
+}
+.backbutton{
+    width: 40px;
+    float: left;
 }
 

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Noto+Sans+Thai:wght@200&family=Open+Sans:wght@300&family=Sarabun:wght@100;200&display=swap');
+
+
+body{
+    background-image: url(./img-bg/bg7.jpg);
+
+}
+h1 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    color: #754D3C;
+    text-align: center;
+    display: inline;
+}
+.border1 {
+    width: 700px;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 6px;
+    margin-top: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px 0 rgba(108, 95, 91, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.295);
+    background: linear-gradient(180deg, rgba(246,246,246,1) 90%, rgb(212, 207, 203) 100%);   
+}
+h4 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    color: #5A2C1E;
+    text-align: center;
+    display: inline-block;
+    bottom: 0px;
+    
+}
+.title {
+    font-family: 'Noto Sans Thai', sans-serif;
+    text-align: center;
+    color: #B56658;
+    position: absolute;
+    top: 160px;
+    font-size: 28px;
+}
+h1.title:hover {
+    text-shadow: 0px 1px 0px #bd8f8c;
+}
+h3 {
+    font-family: 'Noto Sans Thai', sans-serif;
+    color: #5A2C1E;
+    text-align: center;
+    font-size: 22px;
+    padding: 2px;
+    position: absolute;
+    width: 100%;
+
+}
+.border2 {
+    width: 1050px;
+    height: 450px;
+    background-color: #decbcfec;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px 0 rgba(108, 95, 91, 0.142), 0 3px 5px 0 rgba(0, 0, 0, 0.132);
+
+}
+.border3 {
+    background-color: #F8F7F4;
+    border: 50px solid #F8F7F4;
+    padding: 8px;
+    width: 500px;
+    height: 130px;
+    border-radius: 20px;
+    position: absolute;
+    margin-left: auto;
+    display: inline-block;    
+}
+.back {
+    position: absolute;
+    color: #754D3C;
+    bottom: 14px;
+    left: 585px;
+}
+.text {
+    top: 6px;
+}
+p {
+    text-align: center;
+    font-family: 'Noto Sans Thai', sans-serif;  
+    
+    
+}
+.answer {
+    border: 2px solid #e4dfd0; 
+    width: 180px;
+    left: 30%;
+    position: absolute;
+    bottom: -160px;
+}
+.answer2 {
+    border: 2px solid #e4dfd0; 
+    width: 240px;
+    left: 25%;
+    position: absolute;
+    bottom: -30px;
+}
+
+.yes {
+    left: 516px;
+    background-color: #F8F7F4;
+    border-color: #e7dcd7;
+    padding: 14px;
+    width: 240px;
+    border-radius: 30px;
+    position: absolute;
+    color: #1D897E;
+    bottom: 12px;
+
+}
+button.yes:hover {
+    transform: scale(1.1); 
+    transition: all 0.5s;
+}
+
+.LeftButton {
+    width: 100px;
+    position: absolute;
+    display: inline-block;
+    left: -165px;
+    margin-top: 15px;
+
+
+}
+.RightButton {
+    width: 100px;
+    position: absolute;
+    display: inline-block;
+    right: -165px;
+    margin-top: 15px;
+
+}
+img:hover {
+    transform: scale(1.12); 
+    transition: all 0.8s;
+}
+.button{
+    width: 40px;
+    float: left;
+    position: absolute;
+    top: 16px;   
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
