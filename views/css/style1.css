@@ -115,6 +115,7 @@ h3 {
 }
 .AllHomepage {
     margin: auto;
+    width: 100%;
 }
 li .dropdown {
     display: inline-block;
