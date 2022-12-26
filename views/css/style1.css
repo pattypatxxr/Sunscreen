@@ -116,6 +116,7 @@ h3 {
 .AllHomepage {
     margin: auto;
     width: 1200px;
+    height: 350px;
 }
 li .dropdown {
     display: inline-block;
